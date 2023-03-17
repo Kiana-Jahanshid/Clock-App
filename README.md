@@ -4,3 +4,5 @@
 
 + ## Timer
 > ### ![This is an image](https://github.com/kiana-jahanshid/Clock-App/blob/main/pics/timer.jpg)
++
+> ### ![This is an image](https://github.com/kiana-jahanshid/Clock-App/blob/main/pics/timer_not.jpg)
