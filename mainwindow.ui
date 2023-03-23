@@ -35,7 +35,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>2</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -47,45 +47,198 @@
      <attribute name="title">
       <string>World Clock</string>
      </attribute>
-     <widget class="QPushButton" name="pushButton">
+     <widget class="QPushButton" name="ir">
       <property name="geometry">
        <rect>
-        <x>110</x>
-        <y>200</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QPushButton" name="pushButton_2">
-      <property name="geometry">
-       <rect>
-        <x>290</x>
-        <y>200</y>
-        <width>93</width>
-        <height>28</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>PushButton</string>
-      </property>
-     </widget>
-     <widget class="QLabel" name="label">
-      <property name="geometry">
-       <rect>
-        <x>220</x>
-        <y>50</y>
-        <width>211</width>
+        <x>50</x>
+        <y>100</y>
+        <width>191</width>
         <height>61</height>
        </rect>
       </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
       <property name="text">
-       <string/>
+       <string>IRAN</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="gr">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>160</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
+      <property name="text">
+       <string>GERMANY</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="usa">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>220</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
+      <property name="text">
+       <string>USA</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="gr_time">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
+      <property name="text">
+       <string>03:20 AM</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="us_time">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>220</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
+      <property name="text">
+       <string>17:15 PM</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="ir_time">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>100</y>
+        <width>191</width>
+        <height>61</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Microsoft Sans Serif</family>
+        <pointsize>13</pointsize>
+        <weight>50</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-bottom-color: rgb(170, 0, 0);
+color: rgb(255, 255, 255);
+font: 13pt &quot;Microsoft Sans Serif&quot;;
+background-color: rgb(58, 58, 58);</string>
+      </property>
+      <property name="text">
+       <string>12:00 PM</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="title">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>30</y>
+        <width>221</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: rgb(255, 255, 255);
+font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+      </property>
+      <property name="text">
+       <string>W🌍rld Cl🕔ck</string>
+      </property>
+     </widget>
+     <zorder>ir</zorder>
+     <zorder>gr</zorder>
+     <zorder>ir_time</zorder>
+     <zorder>gr_time</zorder>
+     <zorder>usa</zorder>
+     <zorder>us_time</zorder>
+     <zorder>title</zorder>
     </widget>
     <widget class="QWidget" name="tab">
      <attribute name="title">
