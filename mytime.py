@@ -15,7 +15,11 @@ class MyTime :
             self.hour += 1
             self.minute -= 60
 
-
+        if self.hour >= 24 :
+            self.hour = 0
+            self.minute = 0 
+            self.second = 0
+            
     def minus(self):
             if self.second > 0 :
                 self.second -= 1
@@ -26,5 +30,3 @@ class MyTime :
                     self.hour -= 1
                     self.minute += 60
 
-
-            
