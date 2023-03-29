@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>579</width>
-    <height>462</height>
+    <width>580</width>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -23,7 +23,7 @@
       <x>50</x>
       <y>30</y>
       <width>481</width>
-      <height>361</height>
+      <height>371</height>
      </rect>
     </property>
     <property name="font">
@@ -35,7 +35,7 @@
      <enum>QTabWidget::Rounded</enum>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>1</number>
     </property>
     <property name="movable">
      <bool>false</bool>
@@ -51,7 +51,7 @@
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>100</y>
+        <y>110</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -79,7 +79,7 @@ background-color: rgb(58, 58, 58);</string>
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>160</y>
+        <y>170</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -107,7 +107,7 @@ background-color: rgb(58, 58, 58);</string>
       <property name="geometry">
        <rect>
         <x>50</x>
-        <y>220</y>
+        <y>230</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -135,7 +135,7 @@ background-color: rgb(58, 58, 58);</string>
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>160</y>
+        <y>170</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -156,14 +156,14 @@ font: 13pt &quot;Microsoft Sans Serif&quot;;
 background-color: rgb(58, 58, 58);</string>
       </property>
       <property name="text">
-       <string>03:20 AM</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="us_time">
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>220</y>
+        <y>230</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -184,14 +184,14 @@ font: 13pt &quot;Microsoft Sans Serif&quot;;
 background-color: rgb(58, 58, 58);</string>
       </property>
       <property name="text">
-       <string>17:15 PM</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="ir_time">
       <property name="geometry">
        <rect>
         <x>240</x>
-        <y>100</y>
+        <y>110</y>
         <width>191</width>
         <height>61</height>
        </rect>
@@ -212,21 +212,22 @@ font: 13pt &quot;Microsoft Sans Serif&quot;;
 background-color: rgb(58, 58, 58);</string>
       </property>
       <property name="text">
-       <string>12:00 PM</string>
+       <string/>
       </property>
      </widget>
      <widget class="QPushButton" name="title">
       <property name="geometry">
        <rect>
         <x>130</x>
-        <y>30</y>
+        <y>40</y>
         <width>221</width>
         <height>31</height>
        </rect>
       </property>
       <property name="styleSheet">
        <string notr="true">color: rgb(255, 255, 255);
-font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
+font: 14pt &quot;MS Shell Dlg 2&quot;;
+border-radius: 3px ;</string>
       </property>
       <property name="text">
        <string>W🌍rld Cl🕔ck</string>
@@ -244,6 +245,189 @@ font: 14pt &quot;MS Shell Dlg 2&quot;;</string>
      <attribute name="title">
       <string>Alarm</string>
      </attribute>
+     <widget class="QWidget" name="gridLayoutWidget">
+      <property name="geometry">
+       <rect>
+        <x>50</x>
+        <y>200</y>
+        <width>281</width>
+        <height>131</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout">
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_3">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.531421, y2:0.318, stop:0 rgba(232, 232, 232, 0), stop:1 rgba(255, 255, 255, 0));
+color: rgb(170, 85, 255);</string>
+         </property>
+         <property name="text">
+          <string>Time :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="tb_new_task_title">
+         <property name="enabled">
+          <bool>true</bool>
+         </property>
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Expanding" vsizetype="Maximum">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0 rgba(0, 0, 0, 0), stop:1 rgba(255, 255, 255, 0));
+font: 11pt &quot;MS Shell Dlg 2&quot;;
+background-color: rgb(255, 255, 255);
+border-radius: 5px;</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_4">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.531421, y2:0.318, stop:0 rgba(232, 232, 232, 0), stop:1 rgba(255, 255, 255, 0));
+color: rgb(170, 85, 255);</string>
+         </property>
+         <property name="text">
+          <string>Alarm Title :</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QComboBox" name="comboBox">
+         <property name="styleSheet">
+          <string notr="true">color: rgb(0, 0, 0);
+background-color: rgb(255, 255, 255);</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QTimeEdit" name="timeEdit">
+         <property name="font">
+          <font>
+           <family>MS Shell Dlg 2</family>
+           <pointsize>10</pointsize>
+           <weight>50</weight>
+           <italic>false</italic>
+           <bold>false</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: rgb(255, 255, 255);
+font: 10pt &quot;MS Shell Dlg 2&quot;;</string>
+         </property>
+         <property name="maximumDate">
+          <date>
+           <year>2000</year>
+           <month>1</month>
+           <day>1</day>
+          </date>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <widget class="QLabel" name="label_5">
+         <property name="sizePolicy">
+          <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+           <horstretch>0</horstretch>
+           <verstretch>0</verstretch>
+          </sizepolicy>
+         </property>
+         <property name="font">
+          <font>
+           <family>MV Boli</family>
+           <pointsize>11</pointsize>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">background-color: qlineargradient(spread:pad, x1:0.52, y1:1, x2:0.531421, y2:0.318, stop:0 rgba(232, 232, 232, 0), stop:1 rgba(255, 255, 255, 0));
+color: rgb(170, 85, 255);</string>
+         </property>
+         <property name="text">
+          <string>Date :</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QPushButton" name="btn_new_alarm">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>230</y>
+        <width>71</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Minimum" vsizetype="Maximum">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>MS Shell Dlg 2</family>
+        <pointsize>22</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="toolTip">
+       <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;press to add new task&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+      </property>
+      <property name="layoutDirection">
+       <enum>Qt::LeftToRight</enum>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 35px;
+background-color: rgb(170, 85, 255);
+color: rgb(255, 255, 255);
+
+</string>
+      </property>
+      <property name="text">
+       <string>+</string>
+      </property>
+     </widget>
+     <widget class="QWidget" name="gridLayoutWidget_2">
+      <property name="geometry">
+       <rect>
+        <x>30</x>
+        <y>20</y>
+        <width>421</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2"/>
+     </widget>
     </widget>
     <widget class="QWidget" name="tab_3">
      <attribute name="title">
@@ -373,7 +557,7 @@ background-color: rgb(0, 118, 102);</string>
        <string notr="true">color: rgb(242, 98, 0);</string>
       </property>
       <property name="text">
-       <string/>
+       <string>0</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -398,7 +582,7 @@ background-color: rgb(0, 118, 102);</string>
        <string notr="true">color: rgb(242, 98, 0);</string>
       </property>
       <property name="text">
-       <string/>
+       <string>0</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -423,7 +607,7 @@ background-color: rgb(0, 118, 102);</string>
        <string notr="true">color: rgb(242, 98, 0);</string>
       </property>
       <property name="text">
-       <string/>
+       <string>0</string>
       </property>
       <property name="alignment">
        <set>Qt::AlignCenter</set>
@@ -502,6 +686,57 @@ background-color: rgb(234, 179, 103);</string>
        <string>Reset</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton">
+      <property name="geometry">
+       <rect>
+        <x>80</x>
+        <y>30</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 2px;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Hour</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>190</x>
+        <y>30</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 2px;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Minute</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pushButton_3">
+      <property name="geometry">
+       <rect>
+        <x>300</x>
+        <y>30</y>
+        <width>101</width>
+        <height>28</height>
+       </rect>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">border-radius: 2px;
+color: rgb(255, 255, 255);</string>
+      </property>
+      <property name="text">
+       <string>Second</string>
+      </property>
+     </widget>
     </widget>
    </widget>
   </widget>
@@ -510,7 +745,7 @@ background-color: rgb(234, 179, 103);</string>
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>579</width>
+     <width>580</width>
      <height>26</height>
     </rect>
    </property>
