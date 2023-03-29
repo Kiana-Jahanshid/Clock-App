@@ -19,7 +19,7 @@ class WorldTimeThread(QThread):
         s1=self.ir_time[6:8]
         m1=self.ir_time[3:5]
         h1=self.ir_time[0:2]        
-        print("iran time :" + self.ir_time)
+        #print("iran time :" + self.ir_time)
 
 
         usa = datetime.now(pytz.utc)
@@ -30,7 +30,7 @@ class WorldTimeThread(QThread):
         s3=self.us_time[6:8]
         m3=self.us_time[3:5]
         h3=self.us_time[0:2]        
-        print("usa time : " + self.us_time)
+        #print("usa time : " + self.us_time)
 
         Gr = datetime.now(pytz.utc)
         gr_time = Gr.astimezone(pytz.timezone("Europe/Berlin"))
@@ -40,7 +40,7 @@ class WorldTimeThread(QThread):
         s=self.gr_time[6:8]
         m=self.gr_time[3:5]
         h=self.gr_time[0:2]
-        print("germany time : " + self.gr_time)
+        #print("germany time : " + self.gr_time)
 
         self.time_iran = MyTime(int(h1) , int(m1) , int(s1))
         self.time_ger  = MyTime(int(h)  , int(m)  , int(s) )
