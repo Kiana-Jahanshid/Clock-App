@@ -7,9 +7,8 @@ from mytime import MyTime
 
 
 class StopWatchThread(QThread):
-    #jense moteghayier time midim be jaye int avalie 
-    signal_send = Signal(MyTime) #khodemoon yek signal sakhtim . in sig chi mikhad part kone be thr e main ? yek integer number (second int ast)
-    def __init__(self):
+    signal_send = Signal(MyTime) 
+    def __init__(self ):
         super().__init__()
         
         self.time = MyTime( 0 , 0 , 0)
