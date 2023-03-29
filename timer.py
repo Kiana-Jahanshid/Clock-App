@@ -1,19 +1,14 @@
-import sys
 import time 
-import threading 
 from PySide6.QtWidgets import *
 from PySide6.QtGui import * 
 from PySide6.QtCore import *
-from PySide6.QtUiTools import QUiLoader
-from functools import partial
 from mytime import MyTime
-from ui_mainwindow import Ui_MainWindow
 
 class TimerThread(QThread):
     signal_send = Signal(MyTime)
-    def __init__(self):
+    def __init__(self ):
         super().__init__()        
-        #self.time = MyTime("" , "" , "")    
+        self.time = MyTime(0 ,1 , 15)    
 
     def run(self):
         while True :
@@ -21,3 +16,12 @@ class TimerThread(QThread):
             self.signal_send.emit(self.time)  
             time.sleep(1)
 
+    def reset(self):
+        self.time.hour = 0
+        self.time.minute = 1
+        self.time.second = 1
+
+    def get(self , h , m , s):
+        self.time.second = s
+        self.time.minute = m 
+        self.time.hour = h
