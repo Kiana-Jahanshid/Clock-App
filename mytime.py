@@ -1,9 +1,9 @@
 
 class MyTime :
     def __init__(self , h , m , s) :
-        self.hour = h 
-        self.minute = m  
-        self.second = s
+        self.hour = int(h)
+        self.minute = int(m ) 
+        self.second = int(s)
 
     def plus(self):
         self.second += 1
@@ -23,10 +23,12 @@ class MyTime :
     def minus(self):
             if self.second > 0 :
                 self.second -= 1
-                if self.second == 0 and self.minute > 0:
-                    self.minute -= 1
-                    self.second += 60
-                if self.minute == 0 and self.hour>0:
-                    self.hour -= 1
-                    self.minute += 60
+            if self.second == 0 and self.minute > 0 :
+                self.minute -= 1
+                self.second += 59
+            if self.second == 0 and self.minute == 0 and self.hour >0:
+                self.hour -= 1
+                self.second += 59
+                self.minute +=59
+
 
