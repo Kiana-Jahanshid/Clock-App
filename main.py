@@ -1,6 +1,7 @@
 import sys
 import time 
 import threading 
+import PySide6.QtCore 
 from PySide6.QtWidgets import *
 from PySide6.QtGui import * 
 from PySide6.QtCore import *
@@ -13,7 +14,8 @@ from main_window import Ui_MainWindow
 from functools import partial
 from database import Database
 from plyer import notification
-from PySide6.QtWidgets import  QApplication, QLabel
+from fontTools.ttLib import TTFont
+from PySide6.QtWidgets import  QApplication, QLabel 
 from alarm import Alarm
 
 class MainWindow(QMainWindow):
@@ -123,7 +125,7 @@ class MainWindow(QMainWindow):
         self.alarm_thread = Alarm()
         self.alarm_thread.start()
         self.ui.btn_new_alarm.clicked.connect(self.new_alarm)
-        
+       
     def current_text(self, _): # receive the index, but don't use it.
         global ctext
         ctext = self.ui.comboBox.currentText()
@@ -144,6 +146,7 @@ class MainWindow(QMainWindow):
             msg_box.setText("AN ERROR HAS BEEN ACCURED")
             msg_box.exec()
 
+
     def read_from_database(self):
         global alarms
         alarms = self.db.get_alarm_from_db()
@@ -151,7 +154,7 @@ class MainWindow(QMainWindow):
         print(alarms)
 
     def read_data(self , alarms):
-        global new_checkbox  , recyclebin_btn , alarm_title , alarm_time , edit_btn
+        global new_checkbox  , recyclebin_btn , alarm_title , alarm_time ,alarm_date, edit_btn
         for i in range(len(alarms)) :
             new_checkbox = QCheckBox() 
             new_checkbox.setFixedWidth(80)
@@ -208,16 +211,16 @@ class MainWindow(QMainWindow):
                 self.mylist[c].setText(" ")
             c+= 1
 
-    def edit(self , i , id):
+    def edit(self , i ):
         self.editable = True
-        h = self.alarm_thread.alarm_time[i].hour
-        m = self.alarm_thread.alarm_time[i].minute
-        s = self.alarm_thread.alarm_time[i].second
-        self.alarm_thread.alarm_time[i] = MyTime(h, m, s)
-        self.ui.timeEdit.setTime(QTime(h,m,s))
-        self.edit_alarm_id = id
-        self.edit_alarm_row = i
+        id = i+1
+        title=alarm_title.text()
+        atime = alarm_time.text()
+        date = alarm_date.text()
+        self.db.edit_alarm(id, title , atime , date)
+        self.read_data(alarms)
 
+        
     def check (self):
         for i in range(len(alarms)):
                 alarm_title=alarms[i][1]
@@ -233,8 +236,7 @@ class MainWindow(QMainWindow):
             for btn in self.del_list :
                  self.del_list[i].deleteLater()
                  self.edit_list[i].deleteLater()
-                 self.mylist[i].deleteLater()
-                 
+                 self.mylist[i].deleteLater()          
             self.labels[i].clear()
             self.alarm_time_list[i].clear()
             self.alarm_date_list[i].clear()
